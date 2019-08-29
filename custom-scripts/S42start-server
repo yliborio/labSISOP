@@ -1,0 +1,15 @@
+#!/bin/sh
+case "$1" in
+start)
+	python /usr/bin/my_server.py &
+	;;
+stop)
+	exit 1
+	;;
+*)
+	exit 1
+	;;
+esac
+
+exit 0
+
